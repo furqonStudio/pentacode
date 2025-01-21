@@ -47,3 +47,13 @@
 body {
   font-family: 'Gilroy', sans-serif;
 }
+
+.h2 {
+  @apply text-sm-heading-2 sm:text-heading-2 font-semibold;
+}
+.h3 {
+  @apply text-sm-heading-3 sm:text-heading-3 font-medium;
+}
+.subtitle {
+  @apply text-sm-subtitle sm:text-subtitle;
+}
