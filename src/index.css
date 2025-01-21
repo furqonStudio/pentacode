@@ -43,3 +43,7 @@
   font-weight: 600; /* SemiBold */
   font-style: normal;
 }
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
