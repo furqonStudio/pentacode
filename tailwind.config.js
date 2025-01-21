@@ -3,9 +3,12 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        gilroy: ['Gilroy', 'sans-serif'],
+      },
       fontSize: {
         // Desktop
-        'heading-1': ['67px', '120%'], // size 48px, line-height 120%
+        'heading-1': ['67px', '120%'],
         'heading-2': ['50px', '120%'],
         'heading-3': ['38px', '120%'],
         'heading-4': ['28px', '120%'],
@@ -33,6 +36,14 @@ export default {
         'sm-overline': ['12px', '120%'],
         'sm-caption': ['14px', '120%'],
         'sm-caption-sm': ['12px', '120%'],
+      },
+      fontWeight: {
+        light: 300,
+        regular: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        black: 900,
       },
     },
   },
