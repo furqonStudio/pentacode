@@ -6,7 +6,7 @@ import LeftColumn from './components/sections/LeftColumn'
 import Navbar from './components/sections/Navbar'
 import Reviews from './components/sections/Reviews'
 import Service from './components/sections/Service'
-import WhyChooseUs from './components/Sections/WhyChooseUs'
+import WhyChooseUs from './components/sections/WhyChooseUs'
 
 function App() {
   return (
