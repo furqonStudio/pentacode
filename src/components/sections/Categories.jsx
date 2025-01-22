@@ -30,32 +30,30 @@ const Categories = () => {
   ]
 
   return (
-    <div className="grid border-t border-black">
+    <div className="grid">
       {categories.map((category, index) => (
         <div
           key={index}
           className={`flex ${
-            index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'
+            index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
           } items-center `}
         >
-          <div className="flex flex-col relative justify-center items-center w-1/2 h-full  border border-black">
-            <h3 className="font-gilroy text-sm-heading-3 sm:text-heading-3 font-medium text-center">
-              {category.name}
-            </h3>
+          <div className="flex flex-col relative justify-center items-center w-1/2 h-full border-t border-black">
+            <h3 className="h3">{category.name}</h3>
             <div
               className={`flex gap-1 absolute bottom-4 ${
-                index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'
+                index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
               }`}
             >
-              <p className="font-gilroy text-sm font-semibold">Shop Now</p>
+              <p className="text-sm font-semibold">Shop Now</p>
               <img
                 src={arrow}
                 alt="arrow"
-                className={`transform ${index % 2 === 0 ? 'rotate-180' : ''}`}
+                className={`transform ${index % 2 === 0 ? '' : 'rotate-180'}`}
               />
             </div>
           </div>
-          <div className="w-1/2  border border-black">
+          <div className="w-1/2 border-t border-r border-black">
             <img src={category.image} alt={category.name} />
           </div>
         </div>

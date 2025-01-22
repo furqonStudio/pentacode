@@ -53,15 +53,15 @@ body {
 }
 
 .h2 {
-  @apply text-sm-heading-2 sm:text-heading-2 font-medium sm:font-semibold;
+  @apply text-sm-heading-2 sm:text-heading-2 font-semibold;
 }
 
 .h3 {
-  @apply text-sm-heading-3 sm:text-heading-3 font-regular sm:font-medium;
+  @apply text-sm-heading-3 sm:text-heading-3 font-medium;
 }
 
 .h4 {
-  @apply text-sm-heading-4 sm:text-heading-4 font-regular sm:font-medium;
+  @apply text-sm-heading-4 sm:text-heading-4 font-medium;
 }
 
 .h5 {
@@ -77,7 +77,7 @@ body {
 }
 
 .body {
-  @apply text-sm-body sm:text-body font-regular sm:font-medium;
+  @apply text-sm-body sm:text-body font-medium;
 }
 
 .button {
