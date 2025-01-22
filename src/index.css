@@ -48,12 +48,54 @@ body {
   font-family: 'Gilroy', sans-serif;
 }
 
+.h1 {
+  @apply text-sm-heading-1 sm:text-heading-1 font-medium sm:font-semibold;
+}
+
 .h2 {
-  @apply text-sm-heading-2 sm:text-heading-2 font-semibold;
+  @apply text-sm-heading-2 sm:text-heading-2 font-medium sm:font-semibold;
 }
+
 .h3 {
-  @apply text-sm-heading-3 sm:text-heading-3 font-medium;
+  @apply text-sm-heading-3 sm:text-heading-3 font-regular sm:font-medium;
 }
+
+.h4 {
+  @apply text-sm-heading-4 sm:text-heading-4 font-regular sm:font-medium;
+}
+
+.h5 {
+  @apply text-sm-heading-5 sm:text-heading-5 font-medium;
+}
+
+.h6 {
+  @apply text-sm-heading-6 sm:text-heading-6 font-medium;
+}
+
 .subtitle {
-  @apply text-sm-subtitle sm:text-subtitle;
+  @apply text-sm-subtitle sm:text-subtitle font-medium;
+}
+
+.body {
+  @apply text-sm-body sm:text-body font-regular sm:font-medium;
+}
+
+.button {
+  @apply text-sm-button sm:text-button font-medium;
+}
+
+.link {
+  @apply text-sm-link sm:text-link font-medium;
+}
+
+.overline {
+  @apply text-sm-overline sm:text-overline font-medium;
+}
+
+.caption {
+  @apply text-sm-caption sm:text-caption font-regular;
+}
+
+.caption-sm {
+  @apply text-sm-caption-sm sm:text-caption-sm font-medium;
 }

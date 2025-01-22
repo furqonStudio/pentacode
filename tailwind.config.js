@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         gilroy: ['Gilroy', 'sans-serif'],
       },
+
       fontSize: {
         // Desktop
         'heading-1': ['67px', '120%'],
@@ -37,6 +38,7 @@ export default {
         'sm-caption': ['14px', '120%'],
         'sm-caption-sm': ['12px', '120%'],
       },
+
       fontWeight: {
         light: 300,
         regular: 400,
@@ -44,6 +46,17 @@ export default {
         semibold: 600,
         bold: 700,
         black: 900,
+      },
+
+      colors: {
+        white: '#FFFFFF',
+        'extra-light': '#F8F9FA',
+        'light-gray': '#E8E8E8',
+        gray: '#808080',
+        'dark-gray': '#333333',
+        black: '#000000',
+        success: '#58A65E',
+        error: '#F4533F',
       },
     },
   },
