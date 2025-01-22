@@ -24,12 +24,12 @@ const WhyChooseUs = () => {
 
   return (
     <div>
-      <div className="p-4 py-10 border-b border-black">
+      <div className="p-4 py-10 border-b border-black md:p-20">
         <h2 className="h2">Why Choose Us?</h2>
       </div>
       {contents.map((content, index) => (
         <div
-          className="flex flex-col gap-4 p-4 py-10 border-b border-black"
+          className="flex flex-col gap-4 p-4 py-10 border-b border-black md:p-20"
           key={index}
         >
           <h3 className="h3">{content.title}</h3>

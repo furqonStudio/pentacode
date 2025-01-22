@@ -20,7 +20,7 @@ const Button = ({ label, variant = 'dark' }) => {
 
   return (
     <button
-      className={`text-center text-sm-button sm:text-button font-medium py-4 w-full border ${textColor} ${bgColor} ${borderColor} hover:opacity-80 transition`}
+      className={`text-center text-sm-button sm:text-button font-medium py-4 w-full border ${textColor} ${bgColor} ${borderColor} hover:opacity-80 transition  md:px-4`}
     >
       {label}
     </button>

@@ -2,11 +2,11 @@ import Button from '../Button'
 
 const AboutUs = () => {
   return (
-    <div className="">
-      <div className="p-4 py-10 border-y border-black">
+    <>
+      <div className="p-4 py-10 border-y border-black md:p-20">
         <h2 className="h2">About Us</h2>
       </div>
-      <div className="flex flex-col p-4 py-10 gap-16 border-b border-black">
+      <div className="flex flex-col p-4 py-10 gap-16 border-b border-black md:p-20">
         <div className="flex flex-col gap-6">
           <p className="t-overline">OUR STORY</p>
           <div className="flex flex-col gap-4">
@@ -26,9 +26,11 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <Button label={'LEARN MORE'} variant="light" />
+        <div className="md:w-fit">
+          <Button label={'LEARN MORE'} variant="light" />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

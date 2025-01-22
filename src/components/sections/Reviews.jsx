@@ -3,7 +3,7 @@ import Button from '../Button'
 
 const Reviews = () => {
   return (
-    <div className="flex flex-col gap-16 px-4 py-10">
+    <div className="flex flex-col gap-16 px-4 py-10 md:p-20">
       <div id="text-content" className="flex flex-col gap-4">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-2 items-center">
@@ -32,7 +32,9 @@ const Reviews = () => {
           </div>
         </div>
       </div>
-      <Button label={'READ REVIEWS'} variant="light" />
+      <div className="md:w-fit md:m-auto">
+        <Button label={'READ REVIEWS'} variant="light" />
+      </div>
     </div>
   )
 }

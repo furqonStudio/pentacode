@@ -7,60 +7,66 @@ import Button from '../Button'
 const Contact = () => {
   return (
     <div>
-      <div id="right-column" className="h-[500px]">
+      <div id="right-column" className="w-full">
         <img
           src={contact}
           alt="Contact"
-          className="h-[400px] w-full object-cover"
+          className="h-[400px] md:h-[580px] w-full object-cover"
         />
-        <div className="p-4">
-          <h3 className="h3">Follow Us</h3>
-        </div>
-        <div className="px-4">
-          <img src={social} alt="Social" className="w-fit" />
+        <div className="flex flex-col md:flex-row md:justify-between items-center md:items-center">
+          <div className="p-4 border-r border-black flex justify-center items-center w-1/2">
+            <h3 className="h3">Follow Us</h3>
+          </div>
+          <div className="px-4 flex justify-center items-center m-auto">
+            <img src={social} alt="Social" className="w-fit" />
+          </div>
         </div>
       </div>
 
       <div className="" id="left-column">
         <div
-          className="flex flex-col gap-6 px-4 py-10 border-t border-black"
+          className="flex flex-col gap-6 px-4 py-10 border-t border-black md:p-20"
           id="top-block"
         >
           <h2 className="h2">To Contact Us</h2>
           <div className="flex flex-col gap-4">
             <p className="subtitle font-medium">We will call you back</p>
-            <div className="flex flex-col gap-4">
-              <p className="caption p-4 border border-gray text-gray">
+            <div className="flex flex-col gap-4 md:flex-row ">
+              <p className="caption p-4 border border-gray text-gray md:w-1/2">
                 +380 XX XXX XX XX
               </p>
-              <Button label={'BOOK A CALL'} />
+              <div className="md:w-1/2">
+                <Button label={'BOOK A CALL'} />
+              </div>
             </div>
           </div>
         </div>
 
-        <div className=" border-t border-black" id="bottom-block">
-          <h3 className="h3 p-4">Phone</h3>
-          <div className="flex flex-col px-4 gap-4 py-10 border-t border-black">
-            <div className="flex gap-1">
-              <img src={call} alt="Call" />
-              <p className="text-base font-semibold">+380980099777</p>
-            </div>
-            <div className="flex gap-1">
-              <img src={call} alt="Call" />
-              <p className="text-base font-semibold">+380980099111</p>
+        <div className="flex flex-col md:flex-row">
+          <div className="border-t border-black md:flex-1 md:border-r md:border-b ">
+            <h3 className="h3 p-4 md:text-center">Phone</h3>
+            <div className="flex flex-col px-4 gap-4 py-10 border-t border-black md:justify-center md:items-center md:py-20">
+              <div className="flex gap-1">
+                <img src={call} alt="Call" />
+                <p className="text-base font-semibold">+380980099777</p>
+              </div>
+              <div className="flex gap-1">
+                <img src={call} alt="Call" />
+                <p className="text-base font-semibold">+380980099111</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="border-y border-black">
-          <h3 className="h3 p-4">Address</h3>
-          <div className="flex flex-col px-4 gap-4 py-10 border-t border-black">
-            <p className="t-overline">Opening hours: 8 to 11 p.m.</p>
-            <div className="flex gap-1">
-              <img src={map} alt="Call" />
-              <p className="text-base font-semibold">
-                15/4 Khreshchatyk Street, Kyiv
-              </p>
+          <div className="border-y border-black md:flex-1">
+            <h3 className="h3 p-4 md:text-center">Address</h3>
+            <div className="flex flex-col px-4 gap-4 py-10 border-t border-black md:justify-center md:items-center md:py-20">
+              <p className="t-overline">Opening hours: 8 to 11 p.m.</p>
+              <div className="flex gap-1">
+                <img src={map} alt="Call" />
+                <p className="text-base font-semibold">
+                  15/4 Khreshchatyk Street, Kyiv
+                </p>
+              </div>
             </div>
           </div>
         </div>

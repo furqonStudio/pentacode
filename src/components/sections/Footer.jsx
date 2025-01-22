@@ -20,8 +20,8 @@ const Footer = () => {
   ]
 
   return (
-    <div>
-      <div className="flex flex-col gap-4 px-4 py-10 border-t border-black">
+    <div className="md:grid md:grid-cols-2">
+      <div className="flex flex-col gap-4 px-4 py-10 border-t border-black md:p-10 md:border-r">
         <p className="text-sm-body sm:text-body">
           Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines
           Day, Mothers Day, Christmas...
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 px-4 py-10 border-t border-black">
+      <div className="flex flex-col gap-4 px-4 py-10 border-t border-black md:p-10">
         <h5 className="h5 text-gray">Contact Us</h5>
         <div className="flex flex-col gap-2">
           <p className="caption text-gray">Address</p>
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 px-4 py-10 border-t border-black">
+      <div className="flex flex-col gap-4 px-4 py-10 border-t border-black md:p-10 md:border-r">
         <h5 className="h5 text-gray">Shop</h5>
         <div className="flex flex-col gap-2">
           {shopLinks.map((link, index) => (
@@ -76,8 +76,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 px-4 py-10 border-t border-black">
-        <h5 className="h5 text-gray">Service</h5>
+      <div className="flex flex-col gap-4 px-4 py-10 border-t border-black md:p-10">
+        <h5 className="h5 text-gray">About Us</h5>
         <div className="flex flex-col gap-2">
           {aboutLinks.map((link, index) => (
             <p className="link" key={index}>

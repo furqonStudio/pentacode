@@ -5,12 +5,16 @@ import Button from '../Button'
 const Service = () => {
   return (
     <div>
-      <h2 className="h2 px-4 py-10">Our Service</h2>
+      <h2 className="h2 px-4 py-10 md:p-20 md:text-center">Our Service</h2>
 
       <div id="service-1">
-        <img src={service} alt="Service" className="border-b border-black" />
+        <img
+          src={service}
+          alt="Service"
+          className="border-b border-black md:h-[500px] w-full object-cover object-top"
+        />
         <div
-          className="flex flex-col gap-16 px-4 py-10 border-b border-black"
+          className="flex flex-col gap-16 px-4 py-10 border-b border-black  md:p-20"
           id="left-column"
         >
           <div id="text-content" className="flex flex-col gap-6">
@@ -24,18 +28,20 @@ const Service = () => {
               </p>
             </div>
           </div>
-          <Button label={'SUBSCRIBE NOW'} variant="light" />
+          <div className="md:w-fit md:m-auto">
+            <Button label={'SUBSCRIBE NOW'} variant="light" />
+          </div>
         </div>
       </div>
 
       <div
         id="service-2"
-        className="relative bg-cover bg-center text-white h-[416px]"
+        className="relative bg-cover bg-center text-white h-[416px] md:h-[500px]"
         style={{
           backgroundImage: `url(${service2})`,
         }}
       >
-        <div className="flex flex-col gap-16 px-4 py-10 bg-black/50 h-full w-full max-w-lg text-center content-center">
+        <div className="flex flex-col gap-16 px-4 py-10 bg-black/50 h-full w-full text-center content-center md:p-20">
           <div id="text-content" className="flex flex-col gap-6">
             <p className="t-overline">SERVICE</p>
             <div className="flex flex-col gap-4">
@@ -47,7 +53,9 @@ const Service = () => {
               </p>
             </div>
           </div>
-          <Button label={'INQUIRE NOW'} variant="transparent" />
+          <div className="md:w-fit md:m-auto">
+            <Button label={'INQUIRE NOW'} variant="transparent" />
+          </div>
         </div>
       </div>
     </div>
