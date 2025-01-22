@@ -1,6 +1,7 @@
 import AboutUs from './components/AboutUs'
 import Categories from './components/Categories'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 import LeftColumn from './components/LeftColumn'
 import Navbar from './components/Navbar'
 import Reviews from './components/Reviews'
@@ -18,6 +19,7 @@ function App() {
       <Contact />
       <Service />
       <Reviews />
+      <Footer />
     </div>
   )
 }
