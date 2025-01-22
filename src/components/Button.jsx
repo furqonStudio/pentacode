@@ -1,8 +1,22 @@
 const Button = ({ label, variant = 'dark' }) => {
   const isDark = variant === 'dark'
-  const textColor = isDark ? 'text-white' : 'text-black'
-  const bgColor = isDark ? 'bg-black' : 'bg-white'
-  const borderColor = isDark ? 'border-white' : 'border-black'
+  const isTransparent = variant === 'transparent'
+
+  const textColor = isTransparent
+    ? 'text-white'
+    : isDark
+    ? 'text-white'
+    : 'text-black'
+  const bgColor = isTransparent
+    ? 'bg-transparent'
+    : isDark
+    ? 'bg-black'
+    : 'bg-white'
+  const borderColor = isTransparent
+    ? 'border-white'
+    : isDark
+    ? 'border-white'
+    : 'border-black'
 
   return (
     <button

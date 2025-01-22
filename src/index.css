@@ -88,7 +88,7 @@ body {
   @apply text-sm-link sm:text-link font-medium;
 }
 
-.overline {
+.t-overline {
   @apply text-sm-overline sm:text-overline font-medium;
 }
 

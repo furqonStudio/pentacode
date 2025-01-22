@@ -29,7 +29,7 @@ const Footer = () => {
           Reminds you 7 days before. No spam or sharing your address
         </p>
         <div className="flex flex-col gap-4">
-          <p className="text-sm-caption sm:text-caption font-medium p-4 border border-gray-300 text-gray-400">
+          <p className="caption p-4 border border-light-gray text-gray">
             Your Email
           </p>
           <Button label={'REMIND'} />
@@ -37,55 +37,39 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col gap-4 px-4 py-10 border-t border-black">
-        <h5 className="text-sm-heading-5 sm:text-heading-5 font-medium">
-          Contact Us
-        </h5>
+        <h5 className="h5 text-gray">Contact Us</h5>
         <div className="flex flex-col gap-2">
-          <p className="text-sm-caption sm:text-caption text-gray-400">
-            Address
-          </p>
-          <p className="text-sm-link sm:text-link">
-            15/4 Khreshchatyk Street, Kyiv
-          </p>
+          <p className="caption text-gray">Address</p>
+          <p className="link">15/4 Khreshchatyk Street, Kyiv</p>
         </div>
         <div className="flex flex-col gap-2">
-          <p className="text-sm-caption sm:text-caption text-gray-400">Phone</p>
-          <p className="text-sm-link sm:text-link">+380980099777</p>
+          <p className="caption text-gray">Phone</p>
+          <p className="link">+380980099777</p>
         </div>
         <div className="flex flex-col gap-2">
-          <p className="text-sm-caption sm:text-caption text-gray-400">
-            General Enquiry
-          </p>
-          <p className="text-sm-link sm:text-link">
-            Kiev.Florist.Studio@gmail.com
-          </p>
+          <p className="caption text-gray">General Enquiry</p>
+          <p className="link">Kiev.Florist.Studio@gmail.com</p>
         </div>
         <div className="flex flex-col gap-4">
-          <h5 className="text-sm-heading-5 sm:text-heading-5 font-medium">
-            Follow Us
-          </h5>
+          <h5 className="h5 text-gray">Follow Us</h5>
           <img src={social} alt="Social" className="w-[248px]" />
         </div>
       </div>
 
       <div className="flex flex-col gap-4 px-4 py-10 border-t border-black">
-        <h5 className="text-sm-heading-5 sm:text-heading-5 font-medium">
-          Shop
-        </h5>
+        <h5 className="h5 text-gray">Shop</h5>
         <div className="flex flex-col gap-2">
           {shopLinks.map((link, index) => (
-            <p className="text-sm-link sm:text-link font-medium" key={index}>
+            <p className="link" key={index}>
               {link}
             </p>
           ))}
         </div>
 
-        <h5 className="text-sm-heading-5 sm:text-heading-5 font-medium">
-          Service
-        </h5>
+        <h5 className="h5 text-gray">Service</h5>
         <div className="flex flex-col gap-2">
           {serviceLinks.map((link, index) => (
-            <p className="text-sm-link sm:text-link font-medium" key={index}>
+            <p className="link" key={index}>
               {link}
             </p>
           ))}
@@ -93,19 +77,17 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col gap-4 px-4 py-10 border-t border-black">
-        <h5 className="text-sm-heading-5 sm:text-heading-5 font-medium">
-          Service
-        </h5>
+        <h5 className="h5 text-gray">Service</h5>
         <div className="flex flex-col gap-2">
           {aboutLinks.map((link, index) => (
-            <p className="text-sm-link sm:text-link font-medium" key={index}>
+            <p className="link" key={index}>
               {link}
             </p>
           ))}
         </div>
         <div className="flex flex-col gap-2">
           {otherLinks.map((link, index) => (
-            <p className="text-sm-link sm:text-link font-medium" key={index}>
+            <p className="link" key={index}>
               {link}
             </p>
           ))}
