@@ -7,7 +7,7 @@ const CategoryCard = ({ category, isReversed }) => {
         isReversed ? 'flex-row-reverse' : 'flex-row'
       } items-center`}
     >
-      <div className="flex flex-col p-3 text-center relative justify-center items-center w-1/2 h-full border-t border-black">
+      <div className="flex flex-col p-3 text-center relative justify-center items-center w-1/2 h-full border-t border-black lg:border-l">
         <h3 className="h3">{category.name}</h3>
         <div
           className={`flex gap-1  absolute bottom-4 ${

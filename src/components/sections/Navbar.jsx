@@ -3,7 +3,7 @@ import shopbag from '../../assets/icons/shopbag.svg'
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between border-b border-black">
+    <div className="fixed top-0 z-10 w-full bg-white flex justify-between border-b border-black lg:h-[83px]">
       <div className="cursor-pointer w-12 h-12 flex items-center justify-center border-r border-black lg:hidden">
         <img src={hamburger} alt="Menu" />
       </div>

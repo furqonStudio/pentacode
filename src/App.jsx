@@ -12,8 +12,10 @@ function App() {
   return (
     <div className="border-1 border-black">
       <Navbar />
-      <LeftColumn />
-      <Categories />
+      <div className="lg:grid lg:grid-cols-2">
+        <LeftColumn />
+        <Categories />
+      </div>
       <AboutUs />
       <WhyChooseUs />
       <Contact />
