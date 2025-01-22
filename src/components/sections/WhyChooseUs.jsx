@@ -23,19 +23,21 @@ const WhyChooseUs = () => {
   ]
 
   return (
-    <div>
-      <div className="p-4 py-10 border-b border-black md:p-20">
+    <div className="lg:grid lg:grid-cols-2">
+      <div className="p-4 py-10 border-b border-black md:p-20 lg:sticky lg:top-[80px] lg:border-t lg:h-fit lg:border-b-0">
         <h2 className="h2">Why Choose Us?</h2>
       </div>
-      {contents.map((content, index) => (
-        <div
-          className="flex flex-col gap-4 p-4 py-10 border-b border-black md:p-20"
-          key={index}
-        >
-          <h3 className="h3">{content.title}</h3>
-          <p className="body">{content.description}</p>
-        </div>
-      ))}
+      <div className="">
+        {contents.map((content, index) => (
+          <div
+            className="flex flex-col gap-4 p-4 py-10 border-b border-black md:p-20 lg:border-l"
+            key={index}
+          >
+            <h3 className="h3">{content.title}</h3>
+            <p className="body">{content.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

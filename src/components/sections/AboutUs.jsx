@@ -2,11 +2,11 @@ import Button from '../Button'
 
 const AboutUs = () => {
   return (
-    <>
-      <div className="p-4 py-10 border-y border-black md:p-20">
+    <div className="lg:grid lg:grid-cols-2">
+      <div className="p-4 py-10 border-y border-black md:p-20 lg:sticky lg:top-[80px] lg:h-fit lg:border-b-0">
         <h2 className="h2">About Us</h2>
       </div>
-      <div className="flex flex-col p-4 py-10 gap-16 border-b border-black md:p-20">
+      <div className="flex flex-col p-4 py-10 gap-16 border-b border-black md:p-20 lg:border-l">
         <div className="flex flex-col gap-6">
           <p className="t-overline">OUR STORY</p>
           <div className="flex flex-col gap-4">
@@ -30,7 +30,7 @@ const AboutUs = () => {
           <Button label={'LEARN MORE'} variant="light" />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

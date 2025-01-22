@@ -7,7 +7,7 @@ const CategoryCard = ({ category, isReversed }) => {
         isReversed ? 'flex-row-reverse' : 'flex-row'
       } items-center`}
     >
-      <div className="flex flex-col p-3 text-center relative justify-center items-center w-1/2 h-full border-t border-black lg:border-l">
+      <div className="flex flex-col p-3 text-center relative justify-center items-center w-1/2 h-full border-t border-black lg:border-l lg:border-b">
         <h3 className="h3">{category.name}</h3>
         <div
           className={`flex gap-1  absolute bottom-4 ${
@@ -22,7 +22,7 @@ const CategoryCard = ({ category, isReversed }) => {
           />
         </div>
       </div>
-      <div className="w-1/2 border-t border-r border-black">
+      <div className="w-1/2 border-t border-r border-black ">
         <img src={category.image} alt={category.name} className="w-full" />
       </div>
     </div>
