@@ -3,6 +3,7 @@ import Categories from './components/Categories'
 import Contact from './components/Contact'
 import LeftColumn from './components/LeftColumn'
 import Navbar from './components/Navbar'
+import Reviews from './components/Reviews'
 import Service from './components/Service'
 import WhyChooseUs from './components/WhyChooseUs'
 
@@ -16,6 +17,7 @@ function App() {
       <WhyChooseUs />
       <Contact />
       <Service />
+      <Reviews />
     </div>
   )
 }
