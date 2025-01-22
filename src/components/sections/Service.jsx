@@ -42,26 +42,29 @@ const Service = () => {
       </div>
 
       <div
-        id="service-2"
-        className="relative bg-cover bg-center text-white h-[416px] md:h-[500px] lg:h-[720px]"
+        className="relative bg-fixed h-[420px] md:h-[500px] lg:h-[720px]"
         style={{
           backgroundImage: `url(${service2})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
       >
-        <div className="flex flex-col gap-16 px-4 py-10 bg-black/50 w-full text-center content-center md:p-20 lg:m-auto">
-          <div id="text-content" className="flex flex-col gap-6 ">
-            <p className="t-overline">SERVICE</p>
-            <div className="flex flex-col gap-4">
-              <h2 className="h2 font-semibold">Wedding & Event Decor</h2>
-              <p className="body">
-                Let our team of expert florists and designers create stunning,
-                on-trend floral décor for your special day. Trust us to bring
-                your vision to life.
-              </p>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center text-white flex flex-col px-4 py-20 md:p-20 gap-16">
+            <div id="text-content" className="flex flex-col gap-6">
+              <p className="t-overline">SERVICE</p>
+              <div className="flex flex-col gap-4">
+                <h2 className="h2 font-semibold">Wedding & Event Decor</h2>
+                <p className="body">
+                  Let our team of expert florists and designers create stunning,
+                  on-trend floral décor for your special day. Trust us to bring
+                  your vision to life.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="md:w-fit md:m-auto mt-auto">
-            <Button label={'INQUIRE NOW'} variant="transparent" />
+            <div className="md:w-fit md:m-auto mt-auto">
+              <Button label={'INQUIRE NOW'} variant="transparent" />
+            </div>
           </div>
         </div>
       </div>

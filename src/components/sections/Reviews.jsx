@@ -18,7 +18,7 @@ const Reviews = () => {
         <div className="flex flex-col gap-8 items-center justify-center text-center">
           <div className=" flex">
             <img src={arrow} alt="Prev Arrow" />
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 px-4">
               <p className="text-[22px] italic font-normal">
                 “Ordered flowers online and they were the best bouquet!
                 Impressed everyone around. Highly recommend this flower shop!”
