@@ -6,24 +6,11 @@ import Button from '../Button'
 
 const Contact = () => {
   return (
-    <div>
-      <div id="right-column" className="w-full">
-        <img
-          src={contact}
-          alt="Contact"
-          className="h-[400px] md:h-[580px] w-full object-cover"
-        />
-        <div className="flex flex-col md:flex-row md:justify-between items-center md:items-center">
-          <div className="p-4 border-r border-black flex justify-center items-center w-1/2">
-            <h3 className="h3">Follow Us</h3>
-          </div>
-          <div className="px-4 flex justify-center items-center m-auto">
-            <img src={social} alt="Social" className="w-fit" />
-          </div>
-        </div>
-      </div>
-
-      <div className="" id="left-column">
+    <div className="lg:grid lg:grid-cols-2 flex flex-col-reverse">
+      <div
+        className="lg:border-r flex flex-col justify-between"
+        id="left-column"
+      >
         <div
           className="flex flex-col gap-6 px-4 py-10 border-t border-black md:p-20"
           id="top-block"
@@ -68,6 +55,22 @@ const Contact = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="right-column" className="w-full">
+        <img
+          src={contact}
+          alt="Contact"
+          className="h-[400px] md:h-[580px] w-full object-cover"
+        />
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center lg:border-b">
+          <div className="p-4 md:border-r border-black flex md:justify-center md:items-center md:w-1/2">
+            <h3 className="h3">Follow Us</h3>
+          </div>
+          <div className="px-4 pb-4 flex md:pb-0 md:justify-center md:items-center md:m-auto">
+            <img src={social} alt="Social" className="w-fit" />
           </div>
         </div>
       </div>

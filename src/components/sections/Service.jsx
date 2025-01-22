@@ -5,22 +5,29 @@ import Button from '../Button'
 const Service = () => {
   return (
     <div>
-      <h2 className="h2 px-4 py-10 md:p-20 md:text-center">Our Service</h2>
+      <h2 className="h2 px-4 py-10 md:p-20 md:text-center lg:border-b">
+        Our Service
+      </h2>
 
-      <div id="service-1">
+      <div
+        className="flex flex-col lg:grid lg:grid-cols-2 lg:h-[720px]"
+        id="service-1"
+      >
         <img
           src={service}
           alt="Service"
-          className="border-b border-black md:h-[500px] w-full object-cover object-top"
+          className="border-b border-black md:h-[500px] lg:h-[720px] w-full object-cover object-top"
         />
         <div
-          className="flex flex-col gap-16 px-4 py-10 border-b border-black  md:p-20"
+          className="flex flex-col gap-16 px-4 py-10 border-b border-black md:p-20 lg:m-auto lg:border-b-0"
           id="left-column"
         >
           <div id="text-content" className="flex flex-col gap-6">
             <p className="t-overline text-center">SERVICE</p>
             <div className="flex flex-col gap-4 items-center ">
-              <h2 className="h2 font-semibold">Flower Subcriptions</h2>
+              <h2 className="h2 font-semibold text-center">
+                Flower Subcriptions
+              </h2>
               <p className="body text-center">
                 Experience the convenience and savings of regular flower
                 deliveries with our flexible subscription service - up to 30%
@@ -36,13 +43,13 @@ const Service = () => {
 
       <div
         id="service-2"
-        className="relative bg-cover bg-center text-white h-[416px] md:h-[500px]"
+        className="relative bg-cover bg-center text-white h-[416px] md:h-[500px] lg:h-[720px]"
         style={{
           backgroundImage: `url(${service2})`,
         }}
       >
-        <div className="flex flex-col gap-16 px-4 py-10 bg-black/50 h-full w-full text-center content-center md:p-20">
-          <div id="text-content" className="flex flex-col gap-6">
+        <div className="flex flex-col gap-16 px-4 py-10 bg-black/50 w-full text-center content-center md:p-20 lg:m-auto">
+          <div id="text-content" className="flex flex-col gap-6 ">
             <p className="t-overline">SERVICE</p>
             <div className="flex flex-col gap-4">
               <h2 className="h2 font-semibold">Wedding & Event Decor</h2>
@@ -53,7 +60,7 @@ const Service = () => {
               </p>
             </div>
           </div>
-          <div className="md:w-fit md:m-auto">
+          <div className="md:w-fit md:m-auto mt-auto">
             <Button label={'INQUIRE NOW'} variant="transparent" />
           </div>
         </div>

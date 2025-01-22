@@ -20,7 +20,7 @@ const Footer = () => {
   ]
 
   return (
-    <div className="md:grid md:grid-cols-2">
+    <div className="md:grid md:grid-cols-2 lg:grid-cols-4">
       <div className="flex flex-col gap-4 px-4 py-10 border-t border-black md:p-10 md:border-r">
         <p className="text-sm-body sm:text-body">
           Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 px-4 py-10 border-t border-black md:p-10">
+      <div className="flex flex-col gap-4 px-4 py-10 border-t border-black md:p-10 lg:border-r">
         <h5 className="h5 text-gray">Contact Us</h5>
         <div className="flex flex-col gap-2">
           <p className="caption text-gray">Address</p>

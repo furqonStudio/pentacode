@@ -1,5 +1,6 @@
 import google from '../../assets/images/google.png'
 import Button from '../Button'
+import arrow from '../../assets/icons/nextarrow.svg'
 
 const Reviews = () => {
   return (
@@ -15,14 +16,18 @@ const Reviews = () => {
           <h2 className="h2 text-center">Our Clients Say</h2>
         </div>
         <div className="flex flex-col gap-8 items-center justify-center text-center">
-          <div className="flex flex-col gap-4">
-            <p className="text-[22px] italic font-normal">
-              “Ordered flowers online and they were the best bouquet! Impressed
-              everyone around. Highly recommend this flower shop!”
-            </p>
-            <p className="text-sm-heading-6 sm:text-heading-6">
-              – Ronald Richards
-            </p>
+          <div className=" flex">
+            <img src={arrow} alt="Prev Arrow" />
+            <div className="flex flex-col gap-4">
+              <p className="text-[22px] italic font-normal">
+                “Ordered flowers online and they were the best bouquet!
+                Impressed everyone around. Highly recommend this flower shop!”
+              </p>
+              <p className="text-sm-heading-6 sm:text-heading-6">
+                – Ronald Richards
+              </p>
+            </div>
+            <img src={arrow} alt="Next Arrow" className="rotate-180" />
           </div>
           <div className="flex gap-1">
             <div className="w-1 h-1 bg-gray rounded-full" />
