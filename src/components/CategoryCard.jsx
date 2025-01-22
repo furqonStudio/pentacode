@@ -1,4 +1,11 @@
 import arrow from '../assets/icons/arrow.svg'
+import { motion } from 'motion/react'
+
+const imageAnimationProps = {
+  initial: { scale: 1.2 },
+  animate: { scale: 1 },
+  transition: { duration: 1, ease: 'easeInOut' },
+}
 
 const CategoryCard = ({ category, isReversed }) => {
   return (
@@ -22,8 +29,13 @@ const CategoryCard = ({ category, isReversed }) => {
           />
         </div>
       </div>
-      <div className="w-1/2 border-t border-r border-black ">
-        <img src={category.image} alt={category.name} className="w-full" />
+      <div className="w-1/2 border-t border-r border-black overflow-hidden">
+        <motion.img
+          src={category.image}
+          alt={category.name}
+          className="w-full"
+          {...imageAnimationProps}
+        />
       </div>
     </div>
   )
