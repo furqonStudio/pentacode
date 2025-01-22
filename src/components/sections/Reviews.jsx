@@ -1,5 +1,5 @@
-import google from '../assets/images/google.png'
-import Button from './Button'
+import google from '../../assets/images/google.png'
+import Button from '../Button'
 
 const Reviews = () => {
   return (

@@ -1,9 +1,9 @@
-import freshFlowers from '../assets/images/fresh-flowers.png'
-import driedFlowers from '../assets/images/dried-flowers.png'
-import livePlants from '../assets/images/live-plants.png'
-import aromaCandels from '../assets/images/aroma-candels.png'
-import fresheners from '../assets/images/fresheners.png'
-import arrow from '../assets/icons/arrow.svg'
+import freshFlowers from '../../assets/images/fresh-flowers.png'
+import driedFlowers from '../../assets/images/dried-flowers.png'
+import livePlants from '../../assets/images/live-plants.png'
+import aromaCandels from '../../assets/images/aroma-candels.png'
+import fresheners from '../../assets/images/fresheners.png'
+import arrow from '../../assets/icons/arrow.svg'
 
 const Categories = () => {
   const categories = [

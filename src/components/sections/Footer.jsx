@@ -1,5 +1,5 @@
-import Button from './Button'
-import social from '../assets/images/social.png'
+import Button from '../Button'
+import social from '../../assets/images/social.png'
 
 const Footer = () => {
   const shopLinks = [

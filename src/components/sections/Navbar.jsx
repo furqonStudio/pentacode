@@ -1,5 +1,5 @@
-import hamburger from '../assets/icons/hamburger.svg'
-import shopbag from '../assets/icons/shopbag.svg'
+import hamburger from '../../assets/icons/hamburger.svg'
+import shopbag from '../../assets/icons/shopbag.svg'
 
 const Navbar = () => {
   return (

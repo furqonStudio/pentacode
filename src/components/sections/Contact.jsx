@@ -1,8 +1,8 @@
-import contact from '../assets/images/contact.png'
-import social from '../assets/images/social.png'
-import call from '../assets/icons/call.svg'
-import map from '../assets/icons/map.svg'
-import Button from './Button'
+import contact from '../../assets/images/contact.png'
+import social from '../../assets/images/social.png'
+import call from '../../assets/icons/call.svg'
+import map from '../../assets/icons/map.svg'
+import Button from '../Button'
 
 const Contact = () => {
   return (

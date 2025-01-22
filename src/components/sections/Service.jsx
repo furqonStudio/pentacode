@@ -1,6 +1,6 @@
-import service from '../assets/images/service.png'
-import service2 from '../assets/images/service-2.jpg'
-import Button from './Button'
+import service from '../../assets/images/service.png'
+import service2 from '../../assets/images/service-2.jpg'
+import Button from '../Button'
 
 const Service = () => {
   return (

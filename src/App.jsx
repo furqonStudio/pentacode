@@ -1,12 +1,12 @@
-import AboutUs from './components/AboutUs'
-import Categories from './components/Categories'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import LeftColumn from './components/LeftColumn'
-import Navbar from './components/Navbar'
-import Reviews from './components/Reviews'
-import Service from './components/Service'
-import WhyChooseUs from './components/WhyChooseUs'
+import AboutUs from './components/sections/AboutUs'
+import Categories from './components/sections/Categories'
+import Contact from './components/sections/Contact'
+import Footer from './components/sections/Footer'
+import LeftColumn from './components/sections/LeftColumn'
+import Navbar from './components/sections/Navbar'
+import Reviews from './components/sections/Reviews'
+import Service from './components/sections/Service'
+import WhyChooseUs from './components/Sections/WhyChooseUs'
 
 function App() {
   return (
