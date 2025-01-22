@@ -10,7 +10,7 @@ import WhyChooseUs from './components/Sections/WhyChooseUs'
 
 function App() {
   return (
-    <div className="border-2 border-black">
+    <div className="border-1 border-black">
       <Navbar />
       <LeftColumn />
       <Categories />
