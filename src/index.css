@@ -49,7 +49,7 @@ body {
 }
 
 .h1 {
-  @apply text-sm-heading-1 sm:text-heading-1 font-medium sm:font-semibold;
+  @apply text-sm-heading-1 sm:text-heading-1 font-semibold;
 }
 
 .h2 {
