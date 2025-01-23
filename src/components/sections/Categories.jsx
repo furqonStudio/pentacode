@@ -30,7 +30,7 @@ const Categories = () => {
   ]
 
   return (
-    <div className="grid pt-[83px]">
+    <div className="grid lg:pt-[83px]">
       {categories.map((category, index) => (
         <CategoryCard
           key={index}

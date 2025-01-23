@@ -26,7 +26,7 @@ const LeftColumn = () => {
 
   return (
     <div
-      className="px-4 py-10 md:p-20 lg:border-b lg:border-black lg:h-[720px] lg:sticky lg:top-[80px]"
+      className="px-4 py-10 md:p-20 lg:border-b lg:border-black lg:h-[720px] lg:sticky mt-12 lg:mt-0 lg:top-[80px]"
       ref={ref}
     >
       <div className="flex flex-col gap-4 pb-6">
