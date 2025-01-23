@@ -1,8 +1,19 @@
 import service from '../../assets/images/service.png'
 import service2 from '../../assets/images/service-2.jpg'
 import Button from '../Button'
+import { motion, useInView } from 'motion/react'
+import { useRef } from 'react'
+
+const imageAnimationProps = {
+  initial: { scale: 1.2 },
+  animate: { scale: 1 },
+  transition: { duration: 1, ease: 'easeInOut' },
+}
 
 const Service = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, amount: 0.2 })
+
   return (
     <div>
       <h2 className="h2 px-4 py-10 md:p-20 md:text-center lg:border-b">
@@ -13,11 +24,20 @@ const Service = () => {
         className="flex flex-col lg:grid lg:grid-cols-2 lg:h-[720px]"
         id="service-1"
       >
-        <img
-          src={service}
-          alt="Service"
-          className="border-b border-black md:h-[500px] lg:h-[720px] w-full object-cover object-top"
-        />
+        <div className="overflow-hidden" ref={ref}>
+          <motion.img
+            src={service}
+            alt="Service"
+            className="border-b border-black md:h-[500px] lg:h-[720px] w-full object-cover object-top"
+            initial={imageAnimationProps.initial}
+            animate={
+              isInView
+                ? imageAnimationProps.animate
+                : imageAnimationProps.initial
+            }
+            transition={imageAnimationProps.transition}
+          />
+        </div>
         <div
           className="flex flex-col gap-16 px-4 py-10 border-b border-black md:p-20 lg:m-auto lg:border-b-0"
           id="left-column"

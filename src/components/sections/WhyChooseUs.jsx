@@ -1,3 +1,12 @@
+import { motion, useInView } from 'motion/react'
+import { useRef } from 'react'
+
+const revealAnimationProps = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5, ease: 'easeOut' },
+}
+
 const WhyChooseUs = () => {
   const contents = [
     {
@@ -25,18 +34,51 @@ const WhyChooseUs = () => {
   return (
     <div className="lg:grid lg:grid-cols-2">
       <div className="p-4 py-10 border-b border-black md:p-20 lg:sticky lg:top-[80px] lg:border-t lg:h-fit lg:border-b-0">
-        <h2 className="h2">Why Choose Us?</h2>
+        <motion.h2
+          className="h2"
+          initial={revealAnimationProps.initial}
+          animate={revealAnimationProps.animate}
+          transition={revealAnimationProps.transition}
+        >
+          Why Choose Us?
+        </motion.h2>
       </div>
-      <div className="">
-        {contents.map((content, index) => (
-          <div
-            className="flex flex-col gap-4 p-4 py-10 border-b border-black md:p-20 lg:border-l"
-            key={index}
-          >
-            <h3 className="h3">{content.title}</h3>
-            <p className="body">{content.description}</p>
-          </div>
-        ))}
+      <div>
+        {contents.map((content, index) => {
+          const ref = useRef(null)
+          const isInView = useInView(ref, { once: true, amount: 0.2 })
+
+          return (
+            <div
+              className="flex flex-col gap-4 p-4 py-10 border-b border-black md:p-20 lg:border-l"
+              key={index}
+              ref={ref}
+            >
+              <motion.h3
+                className="h3"
+                initial={revealAnimationProps.initial}
+                animate={isInView ? revealAnimationProps.animate : undefined}
+                transition={{
+                  ...revealAnimationProps.transition,
+                  delay: index * 0.2,
+                }}
+              >
+                {content.title}
+              </motion.h3>
+              <motion.p
+                className="body"
+                initial={revealAnimationProps.initial}
+                animate={isInView ? revealAnimationProps.animate : undefined}
+                transition={{
+                  ...revealAnimationProps.transition,
+                  delay: index * 0.2 + 0.1,
+                }}
+              >
+                {content.description}
+              </motion.p>
+            </div>
+          )
+        })}
       </div>
     </div>
   )

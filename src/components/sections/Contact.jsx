@@ -4,7 +4,19 @@ import call from '../../assets/icons/call.svg'
 import map from '../../assets/icons/map.svg'
 import Button from '../Button'
 
+import { motion, useInView } from 'motion/react'
+import { useRef } from 'react'
+
+const imageAnimationProps = {
+  initial: { scale: 1.2 },
+  animate: { scale: 1 },
+  transition: { duration: 1, ease: 'easeInOut' },
+}
+
 const Contact = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, amount: 0.2 })
+
   return (
     <div className="lg:grid lg:grid-cols-2 flex flex-col-reverse">
       <div
@@ -60,11 +72,20 @@ const Contact = () => {
       </div>
 
       <div id="right-column" className="w-full">
-        <img
-          src={contact}
-          alt="Contact"
-          className="h-[400px] md:h-[580px] w-full object-cover"
-        />
+        <div className=" overflow-hidden" ref={ref}>
+          <motion.img
+            src={contact}
+            alt="Contact"
+            className="h-[400px] md:h-[580px] w-full object-cover"
+            initial={imageAnimationProps.initial}
+            animate={
+              isInView
+                ? imageAnimationProps.animate
+                : imageAnimationProps.initial
+            }
+            transition={imageAnimationProps.transition}
+          />
+        </div>
         <div className="flex flex-col md:flex-row md:justify-between md:items-center lg:border-b">
           <div className="p-4 md:border-r border-black flex md:justify-center md:items-center md:w-1/2">
             <h3 className="h3">Follow Us</h3>
