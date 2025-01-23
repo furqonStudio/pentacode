@@ -11,18 +11,18 @@ const Navbar = () => {
         <img src={shopbag} alt="Shop" />
       </div>
       <div className="hidden lg:flex">
-        <div className="py-8 px-6 border-r border-black w-[180px] text-center">
+        <div className="py-8 px-6 border-r border-black w-[180px] text-center hover:cursor-pointer">
           <p className="link">Shop</p>
         </div>
-        <div className="py-8 px-6 border-r border-black w-[180px] text-center">
+        <div className="py-8 px-6 border-r border-black w-[180px] text-center hover:cursor-pointer">
           <p className="link">Contact</p>
         </div>
       </div>
       <div className="hidden lg:flex">
-        <div className="py-8 px-6 border-l border-black w-[180px] text-center">
+        <div className="py-8 px-6 border-l border-black w-[180px] text-center hover:cursor-pointer">
           <p className="link">Sign In</p>
         </div>
-        <div className="py-8 px-6 border-l border-black w-[180px] text-center">
+        <div className="py-8 px-6 border-l border-black w-[180px] text-center hover:cursor-pointer">
           <p className="link">Cart</p>
         </div>
       </div>

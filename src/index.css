@@ -85,7 +85,7 @@ body {
 }
 
 .link {
-  @apply text-sm-link sm:text-link font-medium;
+  @apply text-sm-link sm:text-link font-medium hover:cursor-pointer;
 }
 
 .t-overline {

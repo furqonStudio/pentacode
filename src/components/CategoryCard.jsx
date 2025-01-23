@@ -8,6 +8,11 @@ const imageAnimationProps = {
   transition: { duration: 1, ease: 'easeInOut' },
 }
 
+const hoverAnimationProps = {
+  scale: 1.1,
+  transition: { duration: 0.3, ease: 'easeInOut' },
+}
+
 const CategoryCard = ({ category, isReversed }) => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.2 })
@@ -21,15 +26,21 @@ const CategoryCard = ({ category, isReversed }) => {
       <div className="flex flex-col p-3 text-center relative justify-center items-center w-1/2 h-full border-t border-black lg:border-l lg:border-b">
         <h3 className="h3">{category.name}</h3>
         <div
-          className={`flex gap-1  absolute bottom-4 ${
+          className={`flex gap-1 absolute bottom-4 ${
             isReversed ? 'flex-row-reverse' : 'flex-row'
-          }`}
+          } group`}
         >
-          <p className="text-sm md:text-base font-semibold">Shop Now</p>
+          <p className="text-sm md:text-base font-semibold transition-all group-hover:underline group-hover:scale-110">
+            Shop Now
+          </p>
           <img
             src={arrow}
             alt="arrow"
-            className={`transform ${isReversed ? 'rotate-180' : ''}`}
+            className={`transform transition-all ${
+              isReversed
+                ? 'rotate-180 group-hover:-translate-x-6'
+                : 'group-hover:translate-x-6'
+            }`}
           />
         </div>
       </div>
@@ -46,6 +57,7 @@ const CategoryCard = ({ category, isReversed }) => {
             isInView ? imageAnimationProps.animate : imageAnimationProps.initial
           }
           transition={imageAnimationProps.transition}
+          whileHover={hoverAnimationProps}
         />
       </div>
     </div>
